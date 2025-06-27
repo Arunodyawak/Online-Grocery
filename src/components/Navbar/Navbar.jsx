@@ -2,18 +2,19 @@ import React from 'react'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { IoMdSearch } from "react-icons/io";
+import { TbMenu2 } from "react-icons/tb";
 
 const Navbar = () => {
   return (
    
-        <header  className='bg-white'>
+        <header  className='bg-white fixed top-0 right-0 left-0'>
             <nav className='max-w-[1400px] mx-auto h-[14vh] px-10 flex justify-between items-center'>
                 <a href="#" className='text-3xl font-bold'>
                     {/*Logo*/}
                     wanni<span className='text-4xl text-amber-800 uppercase'>A</span>rachchi Gr<span className='text-amber-600 uppercase'>o</span>cify
                 </a>
                     {/*desktop Menu*/}
-                <ul className='flex items-center gap-x-15'>
+                <ul className='md:flex items-center gap-x-15 hidden'>
                     <li>
                         <a href="#"className='font-semibold tracking-wider  text-orange-500'>Home</a>
                     </li>
@@ -44,6 +45,10 @@ const Navbar = () => {
 
                     <a href='#' className='text-zinc-800 text-3xl'>
                         <FaHeart />
+                    </a>
+                    {/* Hamburger */}
+                    <a href='#' className='text-zinc-800 text-3xl md:hidden'>
+                        <TbMenu2 />
                     </a>
                 </div>
             </nav>
