@@ -25,7 +25,7 @@ const Products = () => {
         <Heading highlight="Our" heading="Products" />
 
         {/* Tabs */}
-        <div className="flex gap-3 justify-center mt-10 ">
+        <div className="flex flex-wrap gap-3 justify-center mt-10 ">
           {categories.map((category) => {
 
             return(
@@ -40,7 +40,7 @@ const Products = () => {
           })}
         </div>
           {/* Product Listing */}
-        <div className="grid grid-cols-4 gap-9 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-9 mt-20">
             {renderCards}
         </div>
 
